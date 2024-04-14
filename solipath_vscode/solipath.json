@@ -1,4 +1,4 @@
 [
-	{"name": "julia", "version": "1.8.1"},
+	{"name": "julia", "version": "1.8"},
 	{"name": "visual-studio-code", "version": "latest"}
 ]
