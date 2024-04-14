@@ -7,19 +7,4 @@ on:
   workflow_dispatch:
 jobs:
   build:
-
-    runs-on: ${{matrix.os}}
-
-    strategy: 
-      matrix:
-        include:
-          - os: macos-latest
-            command: ./solipath julia --project test/runtests.jl
-          - os: ubuntu-latest
-            command: ./solipath julia --project test/runtests.jl
-          - os: windows-latest
-            command: .\solipath julia --project test\runtests.jl
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run tests
-      run: ${{matrix.command}}
+    uses: Solipath/Julia-Solipath-Example/.github/workflows/_build.yml@main
