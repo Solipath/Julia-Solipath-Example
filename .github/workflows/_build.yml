@@ -11,11 +11,11 @@ jobs:
       matrix:
         include:
           - os: macos-latest
-            command: ./solipath julia --project test/runtests.jl
+            command: ./solipath julia --project=. test/runtests.jl
           - os: ubuntu-latest
-            command: ./solipath julia --project test/runtests.jl
+            command: ./solipath julia --project=. test/runtests.jl
           - os: windows-latest
-            command: .\solipath julia --project test\runtests.jl
+            command: .\solipath julia --project=. test\runtests.jl
     steps:
     - uses: actions/checkout@v2
     - name: Run tests

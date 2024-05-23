@@ -3,17 +3,17 @@ This is a quick showcase of using Solipath for a Julia project
 
 To start julia repl in bash with current project activated
 ```bash
-./solipath julia
+./solipath julia --project=.
 ```
 
 To run tests listed in test/runtests.jl in bash
 ```bash
-./solipath julia --project test/runtests.jl
+./solipath julia --project=. test/runtests.jl
 ```
 
 To run tests listed in test/runtests.jl in cmd
 ```cmd
-solipath julia --project test/runtests.jl
+solipath julia --project=. test/runtests.jl
 ```
 
 This project includes vscode as a dependency in solipath_vscode/solipath.json so you can start it from the command line.
